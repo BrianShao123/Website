@@ -15,40 +15,46 @@ import MenuItem from '@mui/material/MenuItem';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 
+import "../css/AppBanner.css"
+
+
 export default function AppBanner() {
 
     const items = [
         {
           key: '1',
           label: (
-            <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
-              1st menu item
-            </a>
+            <Link to = "/home"> 
+              About Me
+            </Link>
           ),
         },
         {
           key: '2',
           label: (
             <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">
-              2nd menu item (disabled)
+              My Projects
             </a>
           ),
           icon: <SmileOutlined />,
-          disabled: true,
+          disabled: false,
         },
         {
           key: '3',
           label: (
-            <a target="_blank" rel="noopener noreferrer" href="https://www.luohanacademy.com">
-              3rd menu item (disabled)
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/BrianShao123">
+              Github
             </a>
           ),
-          disabled: true,
+          disabled: false,
         },
         {
           key: '4',
-          danger: true,
-          label: 'a danger item',
+          label: (
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/brian-shao-924a87209/">
+              LinkedIn
+            </a>
+          ),
         },
       ];
 
@@ -141,9 +147,9 @@ export default function AppBanner() {
                     <Box sx={{ display: { xs: 'none', md: 'flex' }}}>
                     <Dropdown menu={{ items }} trigger={['click']}>
     <a onClick={(e) => e.preventDefault()}>
-      <Space>
+      <Space >
       { getAccountMenu(/**auth.loggedIn**/ )}
-        <DownOutlined />
+        <DownOutlined className="ant-btn-primary"/>
       </Space>
     </a>
   </Dropdown>
