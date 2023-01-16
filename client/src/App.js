@@ -1,10 +1,12 @@
-import { Component, useEffect } from "react";
+import React, { Component, useEffect } from "react";
 import { BrowserRouter, Route, Routes} from 'react-router-dom'
+
 
 import SplashScreen from "./components/SplashScreen";
 import LoginScreen from "./components/LoginScreen";
 import AppBanner from "./components/AppBanner";
 import Home from "./components/Home";
+import ProjectsPage from "./components/ProjectsPage"
 
 import "./css/App.css"
 
@@ -20,6 +22,7 @@ const PageNotFound = () => {
           <Routes> 
             <Route exact path="/" element={<SplashScreen />} />
             <Route exact path="/login" element={<LoginScreen />} />
+            <Route exact path="/projects" element={<ProjectsPage />} />
             <Route exact path="/home" element={<Home />} />
           </Routes>
         </div>

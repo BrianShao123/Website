@@ -32,9 +32,9 @@ export default function AppBanner() {
         {
           key: '2',
           label: (
-            <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">
+          <Link to = "/projects"> 
               My Projects
-            </a>
+          </Link>
           ),
           icon: <SmileOutlined />,
           disabled: false,
@@ -43,7 +43,7 @@ export default function AppBanner() {
           key: '3',
           label: (
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/BrianShao123">
-              Github
+              Experience
             </a>
           ),
           disabled: false,
@@ -52,7 +52,7 @@ export default function AppBanner() {
           key: '4',
           label: (
             <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/brian-shao-924a87209/">
-              LinkedIn
+              Resume
             </a>
           ),
         },
