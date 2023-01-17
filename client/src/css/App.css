@@ -1,4 +1,4 @@
-:root {
+#root {
     background: linear-gradient(to right, #B8FFED, #ffffff);
     color: #000;
     position: relative;
@@ -7,4 +7,8 @@
     height: 100%;
     top: 0%;
     
+}
+
+body{
+    margin:0px;
 }

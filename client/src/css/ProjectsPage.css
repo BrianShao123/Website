@@ -6,12 +6,22 @@
     display: flex;
     flex-wrap: nowrap;
   }
+  .center{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+  }
+
+  .center-top{
+    display:flex;
+    justify-content: center;
+  }
 
   .parent-container {
     width:100%;
     display: flex;
     flex-wrap: nowrap;
-    overflow:hidden;
+    overflow-x:auto;
 }
   
   .box {
@@ -26,7 +36,15 @@
     margin-right: 10px;
     margin-left: 15px;
     display:flex;
+    border-radius:10px;
   }
+
+  .box:hover {
+      border-radius:10px;
+      background-color:royalblue;
+      color: lightgray;
+  }
+
   
   .left {
     margin-right: 10%;
@@ -84,7 +102,8 @@
     width:100%;
     display: flex;
     flex-wrap: nowrap;
-    overflow:hidden;
+    overflow-x:auto;
+    
   }
 
   .scroll-container--dragging{

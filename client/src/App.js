@@ -7,6 +7,7 @@ import LoginScreen from "./components/LoginScreen";
 import AppBanner from "./components/AppBanner";
 import Home from "./components/Home";
 import ProjectsPage from "./components/ProjectsPage"
+import ExperiencePage from "./components/ExperiencePage"
 
 import "./css/App.css"
 
@@ -23,6 +24,7 @@ const PageNotFound = () => {
             <Route exact path="/" element={<SplashScreen />} />
             <Route exact path="/login" element={<LoginScreen />} />
             <Route exact path="/projects" element={<ProjectsPage />} />
+            <Route exact path="/experience" element={<ExperiencePage/>} />
             <Route exact path="/home" element={<Home />} />
           </Routes>
         </div>

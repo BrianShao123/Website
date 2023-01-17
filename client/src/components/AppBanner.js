@@ -42,18 +42,16 @@ export default function AppBanner() {
         {
           key: '3',
           label: (
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/BrianShao123">
+            <Link to = "/experience"> 
               Experience
-            </a>
+            </Link>
           ),
           disabled: false,
         },
         {
           key: '4',
           label: (
-            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/brian-shao-924a87209/">
-              Resume
-            </a>
+            <a href={`${process.env.PUBLIC_URL}/Brian Shao Resume.pdf`}download>Resume Download</a>
           ),
         },
       ];
@@ -132,7 +130,7 @@ export default function AppBanner() {
     }
 
     return (
-        <Box sx={{ flexGrow: 1 }}>
+        <Box sx={{ flexGrow: 1}}>
             <AppBar position="static" sx={{ height: '10%' }} >
                 <Toolbar>
                     <Typography                        
@@ -140,7 +138,7 @@ export default function AppBanner() {
                         noWrap
                         component="div"                      
                     >
-                        <Link edge="start" style={{ textDecoration: 'none', color: 'Red', fontFamily: 'Satisfy' }} to='/'>BS</Link>
+                        <Link edge="start" style={{ textDecoration: 'none', color: 'Red', fontFamily: 'Satisfy'}} to='/'>BS</Link>
                     </Typography>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                     </Typography>
