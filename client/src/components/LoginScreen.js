@@ -38,7 +38,7 @@ export default function LoginScreen() {
     
 
     return (
-        <Box className='login' display="flex" height="100%" >
+        <Box className='login' display="flex" >
         <Grid container component="main" sx={{ height: '100%' }}>
             <Grid
                 item

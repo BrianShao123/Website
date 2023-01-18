@@ -8,6 +8,7 @@ import AppBanner from "./components/AppBanner";
 import Home from "./components/Home";
 import ProjectsPage from "./components/ProjectsPage"
 import ExperiencePage from "./components/ExperiencePage"
+import RegisterScreen from "./components/RegisterScreen";
 
 import "./css/App.css"
 
@@ -25,6 +26,7 @@ const PageNotFound = () => {
             <Route exact path="/login" element={<LoginScreen />} />
             <Route exact path="/projects" element={<ProjectsPage />} />
             <Route exact path="/experience" element={<ExperiencePage/>} />
+            <Route exact path="/register" element={<RegisterScreen/>} />
             <Route exact path="/home" element={<Home />} />
           </Routes>
         </div>

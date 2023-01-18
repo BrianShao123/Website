@@ -35,7 +35,7 @@ function ProjectsPage() {
                             })}
                     </ScrollContainer>
             </div>
-            <Box className="center-top" style={{backgroundColor:'green', height:'25vh'}}> 
+            <Box className="center-top" style={{backgroundColor:'green', height:'28vh'}}> 
                 <Typography > 
                     Description
                 </Typography>
